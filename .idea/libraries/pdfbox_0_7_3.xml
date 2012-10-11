@@ -2,6 +2,7 @@
   <library name="pdfbox-0.7.3">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/build/output/lib/pdfbox-0.7.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/output/lib/fontbox-0.1.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
