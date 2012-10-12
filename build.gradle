@@ -1,16 +1,24 @@
 apply plugin: 'groovy'
 
-defaultTasks 'clean', 'build', 'collectJars'
+defaultTasks 'clean', 'collectJars', 'build'
 
 repositories {
     mavenCentral()
 }
 
+configurations {
+    sourceArchives {
+        description = 'Artifact that contains the source code of the dependencies.'
+    }
+}
+
+
 dependencies {
     groovy "org.codehaus.groovy:groovy-all:${groovyVersion}"
-    compile "pdfbox:pdfbox:${pdfBoxVersion}"
+    compile "org.apache.pdfbox:pdfbox:${pdfBoxVersion}"
     testCompile "org.spockframework:spock-core:${spockVersion}"
     testCompile "org.hamcrest:hamcrest-core:${hamcrestVersion}"
+    sourceArchives "org.apache.pdfbox:pdfbox:${pdfBoxVersion}:sources"
 }
 
 task generateWrapper(type: Wrapper) {
@@ -19,5 +27,5 @@ task generateWrapper(type: Wrapper) {
 
 task collectJars(type: Copy) {
     into "$buildDir/output/lib"
-    from configurations.testRuntime
+    from( [configurations.testRuntime,configurations.sourceArchives] )
 }
