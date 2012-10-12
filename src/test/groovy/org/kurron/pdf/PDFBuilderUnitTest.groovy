@@ -25,7 +25,7 @@ class PDFBuilderUnitTest extends Specification
     }
 
     def "given_added_text_when_build_is_called_then_page_contains_text"() {
-        given: "no added text"
+        given: "added text"
 
         when: "build is called"
         final bytes = sut.build()
@@ -35,6 +35,21 @@ class PDFBuilderUnitTest extends Specification
         assert bytes.length > 0
 
         saveToFile(bytes, "text.pdf")
+
+        println 'done!'
+    }
+
+    def "given_added_image_when_build_is_called_then_page_contains_image"() {
+        given: "added image"
+
+        when: "build is called"
+        final bytes = sut.build()
+
+        then:  "pdf file is created"
+        assert bytes != null
+        assert bytes.length > 0
+
+        saveToFile(bytes, "image.pdf")
 
         println 'done!'
     }

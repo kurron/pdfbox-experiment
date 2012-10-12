@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$USER_HOME$/svn/pdfbox/trunk" charset="ISO-8859-1" />
+    <file url="file://$USER_HOME$/svn/pdfbox/trunk/ant" charset="ISO-8859-1" />
+    <file url="file://$USER_HOME$/svn/pdfbox/trunk/app" charset="ISO-8859-1" />
+    <file url="file://$USER_HOME$/svn/pdfbox/trunk/examples" charset="ISO-8859-1" />
+    <file url="file://$USER_HOME$/svn/pdfbox/trunk/fontbox" charset="ISO-8859-1" />
+    <file url="file://$USER_HOME$/svn/pdfbox/trunk/jempbox" charset="ISO-8859-1" />
+    <file url="file://$USER_HOME$/svn/pdfbox/trunk/lucene" charset="ISO-8859-1" />
+    <file url="file://$USER_HOME$/svn/pdfbox/trunk/parent" charset="ISO-8859-1" />
+    <file url="file://$USER_HOME$/svn/pdfbox/trunk/pdfbox" charset="ISO-8859-1" />
+    <file url="file://$USER_HOME$/svn/pdfbox/trunk/preflight" charset="ISO-8859-1" />
+    <file url="file://$USER_HOME$/svn/pdfbox/trunk/war" charset="ISO-8859-1" />
+    <file url="file://$USER_HOME$/svn/pdfbox/trunk/xmpbox" charset="ISO-8859-1" />
+  </component>
 </project>
 
