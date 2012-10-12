@@ -30,11 +30,11 @@ class PDFBuilder
 
         PDFont font = PDType1Font.HELVETICA_BOLD
         PDPageContentStream contentStream = new PDPageContentStream(document, page)
-        contentStream.drawImage( jpeg, 20, 20 );
+        contentStream.drawImage( jpeg, 0, 200, 800, 600 );
 
         contentStream.beginText()
-        contentStream.setFont( font, 12 )
-        contentStream.moveTextPositionByAmount( 100, 700 )
+        contentStream.setFont( font, 48 )
+        contentStream.moveTextPositionByAmount( 0, 600 )
         contentStream.drawString( "Hello World" )
         contentStream.endText()
 
